@@ -28,9 +28,14 @@ const toDoList = {
 
 };
 
-const toDo = prompt("What do you need to do?");
+while (toDoList.toDos.length < numberOfToDos) {
+    const toDo = prompt("What do you need to do?");
 
-toDoList.addToDo(toDo);
+    toDoList.addToDo(toDo);
+}
+//const toDo = prompt("What do you need to do?");
+
+//toDoList.addToDo(toDo);
 toDoList.showToDos();
-toDoList.changeStatus(1, 'done');
-toDoList.showToDos();
+/*toDoList.changeStatus(1, 'done');
+toDoList.showToDos();*/
